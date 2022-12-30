@@ -34,15 +34,15 @@ func parsear(entrada string) int {
 	return operador
 }
 
-func leerEntraada() string {
+func LeerEntraada() string {
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Scan()
 	return scanner.Text()
 }
 
 func main() {
-	entrada := leerEntraada()
-	operador := leerEntraada()
+	entrada := LeerEntraada()
+	operador := LeerEntraada()
 	fmt.Println(entrada)
 	fmt.Println(operador)
 	c := calc{}
